@@ -2,37 +2,259 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>网页上的层收缩、伸展面板代码</title>
-<style type="text/css">
-*{margin:0;padding:0;} 
-body { font-size: 13px; line-height: 130%; padding: 60px }
-#panel { width: 300px; border: 1px solid #0050D0 }
-.head { padding: 5px; background: #96E555; cursor: pointer }
-.content { padding: 10px; text-indent: 2em; border-top: 1px solid #0050D0;display:block; }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网页上的层收缩、伸展面板代码</title>
+    <style type="text/css">
+
+    *{
+        margin:0;padding:0;
+    } 
+
+    body { 
+        font-size: 13px;
+         line-height: 130%; 
+        padding: 60px ;
+    }
+    #panel { 
+        width: 300px;
+        border: 1px solid #0050D0;
+    }
+    .head { 
+        padding: 5px; 
+        background: #96E555; 
+        cursor: pointer;
+    }
+    .content { 
+        padding: 10px; 
+        text-indent: 2em; 
+        border-top: 1px solid #0050D0;
+        display:block; 
+    }
 </style>
 <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
 <script type="text/javascript">
-$(function(){
- $("#panel h5.head").toggle(function(){
-  $(this).next("div.content").hide();
- },function(){
-  $(this).next("div.content").show();
- })
-})
+        $(function(){
+            $("#panel h5.head").toggle(function(){
+                $(this).next("div.content").hide();
+            },function(){
+            $(this).next("div.content").show();
+            })
+        })
 </script>
+
 </head>
 <body>
 <div id="panel">
- <h5 class="head">点击此处标题可展开</h5>
- <div class="content">
-  一款基于jquery的伸展面板代码，点击面板的标题栏即可折叠、或展开这个层，貌似网上很流行的效果，引用了jQuery插件，使得本款效果更加的简洁实用， </div>
-</div>
+    <h5 class="head">点击此处标题可展开</h5>
+    <div class="content">
+         一款基于jquery的伸展面板代码，点击面板的标题栏即可折叠、或展开这个层，貌似网上很流行的效果，引用了jQuery插件，使得本款效果更加的简洁实用， </div>
+    </div>
 
     <details>
         <summary>展开/收缩</summary>
         <ul><li>这是展开的我</li></ul>
     </details>
+
+
+    <div id="wrapper">
+        <figure>
+            <div class="mis-stage" style="height: 380px;">
+                <ol class="mis-nav-list">
+                    <li class="">
+                        <a href="#" title="Pink Water Lillies">
+                            Pink Water Lillies
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Pond with Lillies">
+                            Pond with Lillies
+                        </a>
+                    </li>
+                    <li class="mis-current">
+                        <a href="#" title="Hidden Pond">
+                            Hidden Pond
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Shrine">
+                            Shrine
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="White Water Lillies">
+                            White Water Lillies
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Garden Walkway">
+                            Garden Walkway
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" title="Lilly with Bee">
+                            Lilly with Bee
+                        </a>
+                    </li>
+                </ol>
+                <!-- The element to select and apply miSlider to - the class is optional -->
+                <ol class="mis-slider" style="left: -1217.5px; width: 4257px;">
+                    <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden03.jpg" alt="Hidden Pond">
+                                <figcaption>Hidden Pond</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden04.jpg" alt="Shrine">
+                                <figcaption>Shrine</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden05.jpg" alt="White Water Lillies">
+                                <figcaption>White Water Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden06.jpg" alt="Garden Walkway">
+                                <figcaption>Garden Walkway</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden07.jpg" alt="Lilly with Bee">
+                                <figcaption>Lilly with Bee</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- The slider element - the class is optional -->
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <!-- A slide element - the class is optional -->
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <!-- A slide container - this element is optional, if absent the plugin adds it automatically -->
+                            <figure>
+                                <!-- Slide content - whatever you want -->
+                                <img src="images/garden01.jpg" alt="Pink Water Lillies">
+                                <figcaption>Pink Water Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden02.jpg" alt="Pond with Lillies">
+                                <figcaption>Pond with Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide mis-current" style="transform-origin: 50% 45% 0px; width: 360px; margin-left: 0px; margin-right: 0px; transform: scale(1); border-spacing: 100px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden03.jpg" alt="Hidden Pond">
+                                <figcaption>Hidden Pond</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden04.jpg" alt="Shrine">
+                                <figcaption>Shrine</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden05.jpg" alt="White Water Lillies">
+                                <figcaption>White Water Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden06.jpg" alt="Garden Walkway">
+                                <figcaption>Garden Walkway</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="mis-slide" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden07.jpg" alt="Lilly with Bee">
+                                <figcaption>Lilly with Bee</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+
+                <li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <!-- A slide element - the class is optional -->
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <!-- A slide container - this element is optional, if absent the plugin adds it automatically -->
+                            <figure>
+                                <!-- Slide content - whatever you want -->
+                                <img src="images/garden01.jpg" alt="Pink Water Lillies">
+                                <figcaption>Pink Water Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li><li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden02.jpg" alt="Pond with Lillies">
+                                <figcaption>Pond with Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li><li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden03.jpg" alt="Hidden Pond">
+                                <figcaption>Hidden Pond</figcaption>
+                            </figure>
+                        </a>
+                    </li><li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden04.jpg" alt="Shrine">
+                                <figcaption>Shrine</figcaption>
+                            </figure>
+                        </a>
+                    </li><li class="mis-slide mis-clone" style="transform-origin: 50% 45% 0px; width: 365.25px; margin-left: -60.875px; margin-right: -60.875px; transform: scale(0.666667); border-spacing: 150px;">
+                        <a href="#" class="mis-container" style="margin-top: 0px;">
+                            <figure>
+                                <img src="images/garden05.jpg" alt="White Water Lillies">
+                                <figcaption>White Water Lillies</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ol>
+                
+            <div class="mis-nav-buttons" style="opacity: 1; width: 360px; left: 487px;">
+                <a href="#" class="mis-prev" style="height: 380px; padding-top: 171px;">
+                    Prev
+                </a>
+                <a href="#" class="mis-next" style="height: 380px; padding-top: 171px;">
+                    Next
+                </a>
+            </div>
+        </div>
+    </figure>
+</div>
+
+
+</div>
 
 </body>
 </html>

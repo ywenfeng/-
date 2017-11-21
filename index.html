@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>广东共生智慧网络科技</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style1.css" type="text/css"> -->
+    <script language="javascript" type="text/javascript">    
+        //图片滚动列表 jb51.net
+        var Speed = 1; //速度(毫秒)
+        var Space = 5; //每次移动(px)
+        var PageWidth = 726; //翻页宽度
+        var fill = 0; //整体移位
+        var MoveLock = false;
+        var MoveTimeObj;
+        var Comp = 0;
+        var AutoPlayObj = null;
+        // GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+        // GetObj('ISL_Cont').scrollLeft = fill;
+        // GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);}
+        // GetObj("ISL_Cont").onmouseout = function(){AutoPlay();}
+        // AutoPlay();
+        </script>
+        <script src="my.js"></script>
 </head>
 <body>
     <!-- logo -->
@@ -34,7 +51,62 @@
         <!-- 内容 -->
         <div class="body">
             <div class="box1 box flex">
-                <div class="img box" style="background-image: url(img/1.jpg);">
+                <div class="LeftBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div>
+                <div class="Cont" id="ISL_Cont">
+                 <div class="ScrCont">
+                  <div id="List1">
+           
+                   <!-- 图片列表 begin -->
+                    <div class="pic">
+                     <a href="/" target="_blank"><img src="img/1.jpg"  /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">办公环境</a></span>
+                     </div>
+                    </div>       
+           
+                   <div class="pic">
+                     <a href="/" target="_blank"><img src="img/2.jpg"  /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">商务活动</a></span>
+                     </div>
+                    </div>
+       
+                    <div class="pic">
+                     <a href="/" target="_blank"><img src="img/3.jpg"  /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">团队组成</a></span>
+                     </div>
+                    </div>
+                    
+                    <div class="pic">
+                     <a href="/" target="_blank"><img src="img/1.jpg" /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">办公环境</a></span>
+                     </div>
+                    </div>
+       
+                    <div class="pic">
+                     <a href="/" target="_blank"><img src="img/2.jpg"  /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">商务活动</a></span>
+                     </div>
+                    </div>
+                   <!-- 图片列表 end -->
+                    <div class="pic">
+                     <a href="/" target="_blank"><img src="img/3.jpg"  /></a>
+                     <div>
+                      <span><a href="javascript::;" target="_blank">团队组成</a></span>
+                     </div>
+                    </div> 
+                       
+                  </div>
+                  <!-- <div id="List2"></div> -->
+                 </div>
+               </div>
+            <div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div>
+           
+
+                <!-- <div class="img box" style="background-image: url(img/1.jpg);">
                     <h3>办公环境</h3>
                 </div>
         
@@ -44,7 +116,7 @@
         
                 <div class="img box" style="background-image: url(img/4.jpg);">
                     <h3>团队组成</h3>
-                </div>
+                </div> -->
             </div>
 
 
@@ -78,9 +150,9 @@
                                 <li>
                                     <a href="http://www.kedaoit.cn//" target="_blank">中山高等职业院校联盟</a>
                                 </li>
-                                <!-- <li>
+                                <li>
                                     <a href="javascript::;"></a>                                            
-                                </li>    -->
+                                </li>   
                             </ul>
                         </details>
 

@@ -1,0 +1,70 @@
+.box1{
+    width:770px;
+    height:260px;
+    overflow:hidden;
+    padding:10px;
+    margin:0 auto;
+    border:1px solid red;
+    }
+.LeftBotton{
+    height:35px;
+    width:22px;
+    background:url(img/left.png) no-repeat 0px 5px;
+    overflow:hidden;
+    float:left;
+    display:inline;
+    margin:110px 0 0 0;
+    cursor:pointer;
+}
+
+.RightBotton{
+    height:35px;
+    width:22px;
+    background:url(img/right.png) no-repeat 0px 5px;
+    overflow:hidden;
+    float:left;
+    display:inline;
+    margin:110px 0 0 0;
+    cursor:pointer;
+}
+.Cont{
+    width:726px;
+    overflow:hidden;
+    float:left;
+}
+.ScrCont{
+    width:10000000px;
+}
+.pic{
+    width:242px;
+    float:left;
+    text-align:center;
+}
+.pic img{
+    padding:9px;
+    background:#fff;
+    border:1px solid #ccc;
+    display:block;
+    margin:0 auto;
+    width:190px;
+    height:190px;
+}
+.pic div{
+    line-height:20px;
+    color:#505050;
+    margin:15px 0px;
+}
+.pic div span{
+    display:block;
+}
+.Cont a:link,.rollBox .Cont a:visited{
+    color:#626466;
+    text-decoration:none;
+}
+.Cont a:hover{
+    color:#f00;
+    text-decoration:underline;
+}
+#List1,.box1 #List2{
+    float:left;
+}
